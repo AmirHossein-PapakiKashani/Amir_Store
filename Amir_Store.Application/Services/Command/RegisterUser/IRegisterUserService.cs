@@ -1,5 +1,6 @@
 ﻿using Amir_Store.Application.Interfaces.Context;
 using Amir_Store.Domain.Entities.Users;
+using Bugeto_Store.Common;
 using Amir_Store.Common.Dto;
 using Amir_Store.Common.Roles;
 using System;
@@ -81,6 +82,8 @@ namespace Amir_Store.Application.Services.Command.RegisterUser
                 {
                     Email = request.Email,
                     FullName = request.FullName,
+                    Password = request.Password,
+                    IsActive = true
                    
                 };
 
